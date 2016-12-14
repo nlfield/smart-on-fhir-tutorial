@@ -173,8 +173,9 @@
     var nearExact = realkg/0.45359237;
     var lbs = Math.floor(nearExact);
     var oz = (nearExact - lbs) * 16;
-    return (lbs.toFixed(2) + 'lbs' + '(' + kgwt +')');
+    return (lbs.toFixed(0) + 'lbs' + '(' + kgwt +')');
   }
+  // end added by nlf
   window.drawVisualization = function(p) {
     $('#holder').show();
     $('#loading').hide();

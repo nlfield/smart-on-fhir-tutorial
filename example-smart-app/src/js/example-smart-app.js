@@ -150,7 +150,7 @@
       return htcm;
     }
     
-    var parts = htcm.split(" ");
+    var parts = htcm.split("cm");
     var realcm = parts[0];
     alert(realcm);
     var inches = (realcm.value*0.393700787);

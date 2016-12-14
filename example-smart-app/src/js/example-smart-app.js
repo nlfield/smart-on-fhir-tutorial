@@ -146,7 +146,7 @@
   // added by nlf 
   function calculateHeightinFeetandInches(htcm) {
     alert(htcm);
-    var parts = htcm.split(" ");
+    var parts = htcm.split(' ');
     var realcm = parts[0];
    
     var inches = (realcm.value*0.393700787);

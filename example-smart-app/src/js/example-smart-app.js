@@ -59,6 +59,7 @@
         p.height = calculateHeightinFeetandInches(p.height);
           p.weight = getQuantityValueAndUnit(weight[0]);
           p.weight =calulateWeightinPounds(p.weight);
+          p.calculatedBMI = calculateBMI(height[0],weight[0]);
           if (typeof systolicbp != 'undefined')  {
             p.systolicbp = systolicbp;
           }
@@ -91,6 +92,7 @@
       age: {value: ''},
       height: {value: ''},
       weight: {value: ''},
+      bmi: {value: ''},
       systolicbp: {value: ''},
       diastolicbp: {value: ''},
       ldl: {value: ''},
@@ -163,6 +165,22 @@
     return ( feet.toFixed(0) + ' ft ' + inches.toFixed(0) + ' in' + '(' + htcm +')');  
   }
   
+  function calculateHeightinInches(htcm) {
+    if (typeof htcm === 'undefined') {
+     alert("height is undefined"); 
+      return htcm;
+    }
+    
+    var parts = htcm.split(" cm");
+    var realcm = parts[0];
+    var inches = (realcm*0.393700787);
+    
+    var feet = Math.floor(inches / 12);
+    inches %= 12
+    return ( feet + inches );
+  }
+  
+  
   function calulateWeightinPounds(kgwt) {
     if (typeof kgwt === 'undefined') {
      alert("height is undefined"); 
@@ -174,6 +192,18 @@
     var lbs = Math.floor(nearExact);
     var oz = (nearExact - lbs) * 16;
     return (lbs.toFixed(0) + 'lbs' + '(' + kgwt +')');
+  }
+  
+  function calculateBMI(height,weight){
+    // formula is Math.round((weight/(heightininches*heightin inches)) * 703.06957964);
+  
+    var inches = (height*0.393700787);
+    
+    var feet = Math.floor(inches / 12);
+    inches %= 12
+    var heightinInches = (feet + inches );
+    var heightsquared = heightinInches * heightinInches;
+    
   }
   // end added by nlf
   window.drawVisualization = function(p) {

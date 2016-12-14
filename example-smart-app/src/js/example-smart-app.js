@@ -150,11 +150,11 @@
       return htcm;
     }
     
-    var parts = htcm.split("cm");
+    var parts = htcm.split(" cm");
     var realcm = parts[0];
     alert(realcm);
-    console.log(realcm);
     var inches = (realcm.value*0.393700787);
+    alert(inches);
     var feet = Math.floor(inches / 12);
     inches %= 12
     return ( feet.toFixed(0) + "ft " + inches.toFixed(0) + 'in');  

@@ -153,9 +153,11 @@
     var parts = htcm.split(" cm");
     var realcm = parts[0];
     alert(realcm);
-    var inches = (realcm.value*0.393700787);
+    var inches = (realcm*0.393700787);
     alert('hello');
     alert(realcm);
+    alert('hellp before inches');
+    alert(inches);
     var feet = Math.floor(inches / 12);
     inches %= 12
     return ( feet.toFixed(0) + ' ft ' + inches.toFixed(0) + ' in');  

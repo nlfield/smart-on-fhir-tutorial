@@ -54,7 +54,7 @@
           p.lname = lname;
           p.age = parseInt(calculateAge(dob));
           p.height = getQuantityValueAndUnit(height[0]);
-        // added by nlf p.height = calculateHeightinFeetandInches(p.height) added by nlf)
+        p.height = calculateHeightinFeetandInches(p.height);
 
           if (typeof systolicbp != 'undefined')  {
             p.systolicbp = systolicbp;
@@ -145,7 +145,7 @@
 
   // added by nlf 
   function calculateHeightinFeetandInches(htcm) {
-    
+    alert(htcm);
     var inches = (htcm.value*0.393700787).toFixed(0);
     var feet = Math.floor(inches / 12);
     inches %= 12;

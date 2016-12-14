@@ -153,6 +153,7 @@
     var parts = htcm.split("cm");
     var realcm = parts[0];
     alert(realcm);
+    console.log(realcm);
     var inches = (realcm.value*0.393700787);
     var feet = Math.floor(inches / 12);
     inches %= 12

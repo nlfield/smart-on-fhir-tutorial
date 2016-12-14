@@ -160,7 +160,7 @@
     alert(inches);
     var feet = Math.floor(inches / 12);
     inches %= 12
-    return ( feet.toFixed(0) + ' ft ' + inches.toFixed(0) + ' in');  
+    return ( feet.toFixed(0) + ' ft ' + inches.toFixed(0) + ' in' + '(' + htcm +')');  
   }
   window.drawVisualization = function(p) {
     $('#holder').show();

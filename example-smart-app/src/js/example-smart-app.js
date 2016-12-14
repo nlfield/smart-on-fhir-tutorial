@@ -146,10 +146,11 @@
   // added by nlf 
   function calculateHeightinFeetandInches(htcm) {
     alert(htcm);
-    var inches = (htcm*0.393700787);
+    var parts = htcm.split(" ");
+    var realcm = parts[0];
+    var inches = (realcm.value*0.393700787);
     var feet = Math.floor(inches / 12);
-    inches %= 12;
-     alert(inches);
+    inches %= 12
     return ( feet.toFixed(0) + "ft " + inches.toFixed(0) + 'in');  
   }
   window.drawVisualization = function(p) {

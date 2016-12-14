@@ -54,7 +54,7 @@
           p.lname = lname;
           p.age = parseInt(calculateAge(dob));
           p.height = getQuantityValueAndUnit(height[0]);
-          p.height = calculateHeightinFeetandInches(p.height) // added by nlf)
+        //  p.height = calculateHeightinFeetandInches(p.height) // added by nlf)
 
           if (typeof systolicbp != 'undefined')  {
             p.systolicbp = systolicbp;

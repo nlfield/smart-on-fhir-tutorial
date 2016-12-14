@@ -58,7 +58,7 @@
           p.height = getQuantityValueAndUnit(height[0]);
         p.height = calculateHeightinFeetandInches(p.height);
           p.weight = getQuantityValueAndUnit(weight[0]);
-          
+          p.wieght =calulateWeightinPounds(p.weight);
           if (typeof systolicbp != 'undefined')  {
             p.systolicbp = systolicbp;
           }
@@ -161,6 +161,19 @@
     var feet = Math.floor(inches / 12);
     inches %= 12
     return ( feet.toFixed(0) + ' ft ' + inches.toFixed(0) + ' in' + '(' + htcm +')');  
+  }
+  
+  function calulateWeightinPounds(kgwt) {
+    if (typeof kgwt === 'undefined') {
+     alert("height is undefined"); 
+      return htcm;
+    }
+    var parts = kgwt.split(" kg");
+    var realkg = parts[0];
+    var nearExact = realkg/0.45359237;
+    var lbs = Math.floor(nearExact);
+    var oz = (nearExact - lbs) * 16;
+    return (lbs.toFixed(2) + 'lbs' + '(' + kgwt +')');
   }
   window.drawVisualization = function(p) {
     $('#holder').show();

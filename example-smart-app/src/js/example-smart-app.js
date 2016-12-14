@@ -149,7 +149,7 @@
     var inches = (htcm*0.393700787).toFixed(0);
     var feet = Math.floor(inches / 12);
     inches %= 12;
-     alert(htcm);
+     alert(inches);
     return ( feet + "ft " + inches + 'in');  
   }
   window.drawVisualization = function(p) {

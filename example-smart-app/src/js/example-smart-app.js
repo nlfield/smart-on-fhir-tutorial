@@ -207,6 +207,8 @@
     var heightsquared = inches * inches;
     var bmi = Math.round((lbs/heightsquared) * 703.06957964);
     console.log("hello");
+    console.log(height);
+    console.log(weight);
     console.log(inches);
     console.log(lbs);
     console.log(bmi);

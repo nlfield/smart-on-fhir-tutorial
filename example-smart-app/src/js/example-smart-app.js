@@ -44,7 +44,7 @@
 
           var height = byCodes('8302-2');
           var weight = byCodes('3141-9');
-          var smokestatus = byCodes('72166-2');
+          var smokerstatus = byCodes('72166-2');
           console.log(smokestatus);
          
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
@@ -63,6 +63,8 @@
           p.weight = getQuantityValueAndUnit(weight[0]);
           p.weight =calulateWeightinPounds(p.weight);
           p.bmi = calculateBMI(height[0],weight[0]);
+          p.smokestatus = getQuantityValueAndUnit(smokerstatus[0]);
+          console.log(p.smokestatus);
           if (typeof systolicbp != 'undefined')  {
             p.systolicbp = systolicbp;
           }
@@ -96,6 +98,7 @@
       height: {value: ''},
       weight: {value: ''},
       bmi: {value: ''},
+      smokestatus: {value: ''},
       systolicbp: {value: ''},
       diastolicbp: {value: ''},
       ldl: {value: ''},

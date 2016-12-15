@@ -203,6 +203,8 @@
     inches %= 12
     var heightinInches = (feet + inches );
     var heightsquared = heightinInches * heightinInches;
+    var bmi = Math.round((weight/heightsquared) * 703.06957964);
+    return (bmi.toFixed(1);
     
   }
   // end added by nlf
@@ -215,6 +217,7 @@
     $('#birthdate').html(p.birthdate);
     $('#age').html(p.age);
     $('#weight').html(p.weight);
+    $('#BMI').html(p.weight);
     $('#height').html(p.height);
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);

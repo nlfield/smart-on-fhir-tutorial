@@ -198,7 +198,9 @@
     // formula is Math.round((weight/(heightininches*heightin inches)) * 703.06957964);
   
     var wgtfromobject= getQuantityValueAndUnit(weight);
+    var hgtfromobject = getQuantityValueAndUnit(height);
     console.log(wgtfromobject);
+    console.log(hgtfromobject);
     var inches = (height*0.393700787);
     
     var nearExact = weight/0.45359237;

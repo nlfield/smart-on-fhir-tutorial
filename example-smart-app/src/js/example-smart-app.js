@@ -201,10 +201,6 @@
     
     var nearExact = weight/0.45359237;
     var lbs = Math.floor(nearExact);
-    
-    
-    var actualwgt = calulateWeightinPounds(weight)
-    alert(actualwgt);
     var feet = Math.floor(inches / 12);
     inches %= 12
     var heightinInches = (feet + inches );

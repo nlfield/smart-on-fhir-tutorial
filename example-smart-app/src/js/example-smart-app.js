@@ -199,12 +199,24 @@
   
     var wgtfromobject= getQuantityValueAndUnit(weight);
     var hgtfromobject = getQuantityValueAndUnit(height);
+    
+    var hgtparts = hgtfromobject.split(" cm");
+    var hgtvalue = hgtparts[0];
+    var inches = (hgtvalue*0.393700787);
+    
+    var wgtparts = hgtfromobject.split(" kg");
+    var wgtvalue = wgtparts[0];
+    var lbs = (wgtvalue/0.45359237);
+    
+    
+    
+    
     console.log(wgtfromobject);
     console.log(hgtfromobject);
-    var inches = (height*0.393700787);
+   /// var inches = (height*0.393700787);
     
-    var nearExact = weight/0.45359237;
-    var lbs = Math.floor(nearExact);
+    //var nearExact = weight/0.45359237;
+   // var lbs = Math.floor(nearExact);
     //var feet = Math.floor(inches / 12);
    // inches %= 12
    // var heightinInches = (feet + inches );

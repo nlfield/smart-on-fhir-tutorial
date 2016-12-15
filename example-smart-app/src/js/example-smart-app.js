@@ -204,7 +204,7 @@
     var hgtvalue = hgtparts[0];
     var inches = (hgtvalue*0.393700787);
     
-    var wgtparts = hgtfromobject.split(" kg");
+    var wgtparts = wgtfromobject.split(" kg");
     var wgtvalue = wgtparts[0];
     var lbs = (wgtvalue/0.45359237);
     

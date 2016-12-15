@@ -240,7 +240,7 @@
   // end added by nlf
   window.drawVisualization = function(p) {
     var fullname = p.fname + ' ' + p.lname;
-    var ageindicator = 'Age: ' + p.age;
+    var ageindicator = '<strong>Age: </strong>' + p.age;
     var genderindicator = '<strong>Gender: </strong>' + p.gender;
     $('#holder').show();
     $('#loading').hide();

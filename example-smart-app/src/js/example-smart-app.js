@@ -241,12 +241,13 @@
   window.drawVisualization = function(p) {
     var fullname = p.fname + ' ' + p.lname;
     var ageindicator = 'Age: ' + p.age;
+    var genderindicator = '<strong>Gender: </strong>' + p.gender;
     $('#holder').show();
     $('#loading').hide();
     $('#fullname').html(fullname);
     $('#fname').html(p.fname);
     $('#lname').html(p.lname);
-    $('#gender').html(p.gender);
+    $('#gender').html(genderindicator);
     $('#birthdate').html(p.birthdate);
     $('#age').html(ageindicator);
     $('#weight').html(p.weight);

@@ -204,7 +204,7 @@
     var heightinInches = (feet + inches );
     var heightsquared = heightinInches * heightinInches;
     var bmi = Math.round((weight/heightsquared) * 703.06957964);
-    return (bmi.toFixed(1);
+    return (bmi.toFixed(1));
     
   }
   // end added by nlf

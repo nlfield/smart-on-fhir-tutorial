@@ -59,7 +59,7 @@
         p.height = calculateHeightinFeetandInches(p.height);
           p.weight = getQuantityValueAndUnit(weight[0]);
           p.weight =calulateWeightinPounds(p.weight);
-          p.calculatedBMI = calculateBMI(height[0],weight[0]);
+          p.bmi = calculateBMI(height[0],weight[0]);
           if (typeof systolicbp != 'undefined')  {
             p.systolicbp = systolicbp;
           }
@@ -217,7 +217,7 @@
     $('#birthdate').html(p.birthdate);
     $('#age').html(p.age);
     $('#weight').html(p.weight);
-    $('#BMI').html(p.weight);
+    $('#bmi').html(p.weight);
     $('#height').html(p.height);
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);

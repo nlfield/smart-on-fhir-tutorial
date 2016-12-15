@@ -239,8 +239,10 @@
   }
   // end added by nlf
   window.drawVisualization = function(p) {
+    var fullname = p.fname + ' ' + p.lname;
     $('#holder').show();
     $('#loading').hide();
+    $('#fullname').html(fullname);
     $('#fname').html(p.fname);
     $('#lname').html(p.lname);
     $('#gender').html(p.gender);

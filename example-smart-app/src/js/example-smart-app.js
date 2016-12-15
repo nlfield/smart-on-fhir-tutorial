@@ -218,7 +218,7 @@
     $('#birthdate').html(p.birthdate);
     $('#age').html(p.age);
     $('#weight').html(p.weight);
-    $('#bmi').html(p.weight);
+    $('#bmi').html(p.bmi);
     $('#height').html(p.height);
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);

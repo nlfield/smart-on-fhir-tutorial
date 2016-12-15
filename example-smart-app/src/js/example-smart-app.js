@@ -201,10 +201,10 @@
     
     var nearExact = weight/0.45359237;
     var lbs = Math.floor(nearExact);
-    var feet = Math.floor(inches / 12);
-    inches %= 12
+    //var feet = Math.floor(inches / 12);
+   // inches %= 12
     var heightinInches = (feet + inches );
-    var heightsquared = heightinInches * heightinInches;
+    var heightsquared = inches * inches;
     var bmi = Math.round((lbs/heightsquared) * 703.06957964);
     return (bmi.toFixed(1));
     

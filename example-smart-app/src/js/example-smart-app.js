@@ -197,6 +197,8 @@
   function calculateBMI(height,weight){
     // formula is Math.round((weight/(heightininches*heightin inches)) * 703.06957964);
   
+    var wgtfromobject= getQuantityValueAndUnit(weight);
+    console.log(wgtfromobject);
     var inches = (height*0.393700787);
     
     var nearExact = weight/0.45359237;

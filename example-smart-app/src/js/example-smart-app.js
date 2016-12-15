@@ -198,13 +198,18 @@
     // formula is Math.round((weight/(heightininches*heightin inches)) * 703.06957964);
   
     var inches = (height*0.393700787);
+    
+    var nearExact = weight/0.45359237;
+    var lbs = Math.floor(nearExact);
+    
+    
     var actualwgt = calulateWeightinPounds(weight)
     alert(actualwgt);
     var feet = Math.floor(inches / 12);
     inches %= 12
     var heightinInches = (feet + inches );
     var heightsquared = heightinInches * heightinInches;
-    var bmi = Math.round((actualwgt/heightsquared) * 703.06957964);
+    var bmi = Math.round((lbs/heightsquared) * 703.06957964);
     return (bmi.toFixed(1));
     
   }

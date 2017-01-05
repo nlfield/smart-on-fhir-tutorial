@@ -240,8 +240,8 @@
   // end added by nlf
   window.drawVisualization = function(p) {
     var fullname = p.fname + ' ' + p.lname;
-    var ageindicator = '<strong>Age: </strong>' + p.age;
-    var genderindicator = '<strong>Gender: </strong>' + p.gender;
+    var ageindicator = '<i class="fa fa-calendar></i><strong>Age: </strong>' + p.age;
+    var genderindicator = '<i class="fa fa-female"></i><strong>Gender: </strong>' + p.gender;
     $('#holder').show();
     $('#loading').hide();
     $('#fullname').html(fullname);

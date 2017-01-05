@@ -256,7 +256,7 @@
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
-    $('#hdl').html(p.hdl);
+    $('#hdl').html('<i class="fa fa-flask"></i>' + p.hdl);
     $('#well').show();
   };
 

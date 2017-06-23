@@ -190,7 +190,7 @@
   function calulateWeightinPounds(kgwt) {
     if (typeof kgwt === 'undefined') {
      alert("height is undefined"); 
-      return htcm;
+      return kgwt;
     }
     var parts = kgwt.split(" kg");
     var realkg = parts[0];
